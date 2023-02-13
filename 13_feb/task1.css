@@ -1,0 +1,40 @@
+
+/* id selector */
+
+#myId {                                
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  } 
+
+  /* class selector */
+
+  #myClass {
+    background-color: rgb(225, 230, 173);
+    color: black;
+    padding: 40px;
+    text-align: center;
+  } 
+
+  /* Universal selector */
+
+  * [lang^="en"] {
+    color: green;
+  }
+
+  *.warning {
+    color: red;
+  }
+  
+  *#maincontent {
+    border: 1px solid blue;
+  }
+
+  /* Element selector */
+
+  div{
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 30px 20px;
+  }
