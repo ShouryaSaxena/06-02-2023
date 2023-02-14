@@ -1,0 +1,72 @@
+
+
+body{
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.head{
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    margin: 0px auto;
+    width: inherit;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+
+/*----------------------------------------Form styling-------------------------------------*/
+
+form {
+    background-color: #fff;
+    width: fit-content;
+    max-width: 400px;
+    min-height: fit-content;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+legend{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.submit{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    margin-left: 40%;
+}
+
+
+/*---------------------------------Pseudo Class Styling-----------------------------------*/
+
+fieldset input:focus{
+    background-color: rgba(120, 120, 120, 0.237);
+}
+
+fieldset input:valid{
+    border: 1px solid #71d300 ;
+}
+
+fieldset input:hover{
+    border: 2px dotted black;
+}
+
+
+/*----------------------------------Pseudo Element Styling---------------------------------*/
+
+
+legend::first-letter{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: blue;
+}
+
