@@ -71,12 +71,7 @@ a:link {
   }
   a:focus{
     box-shadow: 5px 10px 10px 0px rgba(23, 23, 23, 0.539);
-    font-size: 40px;
-    position: relative;
-    top: -10px;
-  }
-  a:current{
-    box-shadow: 5px 10px 10px 0px rgba(23, 23, 23, 0.539);
+    color: #000000;
     font-size: 40px;
     position: relative;
     top: -10px;
