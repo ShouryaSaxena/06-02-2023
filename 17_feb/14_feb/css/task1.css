@@ -1,0 +1,76 @@
+.border {
+  border: 0.5px solid #000;
+}
+* {
+  box-sizing: border-box;
+  border: 0px;
+  padding: 0%;
+}
+.back {
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body head {
+  background-color: #000;
+  padding: 10px;
+  margin: 0px auto;
+  width: inherit;
+  text-align: center;
+}
+body h1 {
+  color: #fff;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(119, 121, 123, 0.136);
+}
+body form {
+  background-color: #fff;
+  width: fit-content;
+  max-width: 400px;
+  min-height: fit-content;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px #000;
+}
+body form fieldset {
+  border: 0.5px solid #000;
+}
+body form fieldset legend {
+  text-align: center;
+  padding-bottom: 10px;
+}
+body form fieldset legend::first-letter {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: blue;
+}
+body form fieldset .submit {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  margin-left: 30%;
+  width: 4rem;
+  height: 1.7rem;
+  border: 0.5px solid #000;
+}
+body form fieldset input {
+  border: 0.5px solid #000;
+}
+body form fieldset input:focus {
+  background-color: rgba(120, 120, 120, 0.237);
+}
+body form fieldset input:valid {
+  border: 1px solid #71d300;
+}
+body form fieldset input:hover {
+  border: 2px dotted black;
+}

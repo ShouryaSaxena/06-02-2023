@@ -1,0 +1,50 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin formcontrol{
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+body{
+
+    h1{
+        text-align: center;
+        padding-top: 50px;
+        color: #fff;
+    }
+
+    .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input{
+            @include formcontrol;
+        }
+
+        select{
+            @include formcontrol;
+
+            option{
+                @include formcontrol;
+            }
+        }
+
+        
+    }
+
+}

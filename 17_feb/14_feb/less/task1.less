@@ -1,0 +1,104 @@
+
+@basecolor: #000;
+@primarycolor: #fff;
+@secondarycolor: red;
+
+.border{
+    border: 0.5px solid @basecolor;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.back{
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+
+    .back;
+
+    head{
+        background-color: @basecolor;
+        padding: 10px;
+        margin: 0px auto;
+        width: inherit;
+        text-align: center;
+    }
+
+    h1{
+        color: @primarycolor;
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(119, 121, 123, 0.136);
+    }
+
+    form {
+        
+        background-color: @primarycolor;
+        width: fit-content;
+        max-width: 400px;
+        min-height: fit-content;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px @basecolor;
+
+        fieldset{
+
+            border: 0.5px solid @basecolor;
+
+
+            legend{
+                text-align: center;
+                padding-bottom: 10px;
+
+                &::first-letter{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: blue;
+                }
+            }
+            
+    
+            .submit{
+                background-color: @secondarycolor;
+                color: @primarycolor;
+                text-align: center;
+                margin-left: 30%;
+                width: 4rem;;
+                height: 1.7rem;
+                .border;
+            }
+
+            input{
+
+                .border;
+                &:focus{
+                    background-color: rgba(120, 120, 120, 0.237);
+                }
+                
+                &:valid{
+                    border: 1px solid #71d300 ;
+                }
+                
+                &:hover{
+                    border: 2px dotted black;
+                }
+            }
+        }
+        
+
+
+    }
+
+    
+
+}

@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*------------------------------------------------Head Nav bar------------------------------------------------*/
+body {
+  background-color: rgba(212, 226, 225, 0.1803921569);
+  justify-content: center;
+  background-image: url("/14_feb/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*-----------------------------------------------Mid Division----------------------------------------------------*/
+  /*---------------------------------------------------Image Grid-------------------------------------------------*/
+}
+body #menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(212, 226, 225, 0.1803921569);
+  margin: 0px;
+  padding: 20px;
+}
+@media screen and (max-width: 800px) {
+  body #menu ul {
+    display: block;
+  }
+}
+body #menu ul li {
+  padding: 8px 45px;
+}
+body #menu ul li a {
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 2rem;
+}
+body #menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1803921569);
+  font-size: 30px;
+  border-radius: 25px;
+}
+body #menu ul li:hover a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+body .division {
+  width: 75%;
+  padding: 0px 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .division h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #ff0000;
+  box-shadow: 2px 10px 10px 3px;
+}
+body .division h1:hover {
+  color: #ff0000;
+}
+body .division .details {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body .division .details:hover {
+  color: #ff0000;
+}
+body .division .main {
+  color: #000;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body .division .main:hover {
+  color: #ff0000;
+}
+body .grid {
+  display: flex;
+  width: 100%;
+  margin: 20px 50px;
+  align-items: center;
+  grid-gap: 2%;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  body .grid {
+    grid-gap: 7%;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .grid {
+    grid-gap: 7%;
+  }
+}
+body .grid .gallery {
+  width: 30%;
+  min-width: 250px;
+  border: 3px solid rgb(0, 0, 0);
+  border-style: hidden;
+  border-radius: 10px;
+  background-color: rgba(199, 220, 220, 0.761);
+  text-align: center;
+  box-shadow: 2px 10px 10px 3px rgba(38, 37, 37, 0.792);
+}
+@media (max-aspect-ratio: 1/1) {
+  body .grid .gallery {
+    flex: 100%;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .grid .gallery {
+    flex: 100%;
+    max-width: 20%;
+  }
+}
+body .grid .gallery img {
+  width: 100%;
+  border-radius: 5px;
+  left: 5%;
+}
+body .grid .gallery p {
+  width: 90%;
+  margin-left: 10px;
+  font-size: larger;
+  margin-bottom: 0px;
+}
+body .grid .gallery button {
+  width: 50%;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: #ff0000;
+  border: 1px dotted #000;
+  margin-bottom: 30px;
+}
+body .grid .gallery:hover {
+  position: relative;
+  top: -10px;
+  background-color: rgba(216, 212, 212, 0.849);
+}
+body #foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(182, 205, 204, 0.1803921569);
+  width: 60%;
+  max-width: 600px;
+  aspect-ratio: 1/0.3;
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  box-shadow: 0px 10px 30px 0px;
+}
+body #foot:hover {
+  color: #ff0000;
+}
+body #foot a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #ff0000;
+  font-style: oblique;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+body #foot a i {
+  padding-right: 15px;
+}
+body #foot a:hover {
+  color: rgb(255, 0, 0);
+}/*# sourceMappingURL=trip.css.map */

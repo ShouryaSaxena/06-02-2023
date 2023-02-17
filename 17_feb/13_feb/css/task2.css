@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+.styling {
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 20px 50px;
+  border: 1px solid #0bd400;
+  text-align: center;
+  background-color: #000000;
+  color: aliceblue;
+}
+body {
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 20px 50px;
+  border: 1px solid #0bd400;
+  text-align: center;
+  background-color: #000000;
+  color: aliceblue;
+}
+body h1 {
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 20px 50px;
+  border: 1px solid #0bd400;
+  text-align: center;
+  background-color: #000000;
+  color: aliceblue;
+}
+body p {
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 20px 50px;
+  border: 1px solid #0bd400;
+  text-align: center;
+  background-color: #000000;
+  color: aliceblue;
+}
+body div {
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 20px 50px;
+  border: 1px solid #0bd400;
+  text-align: center;
+  background-color: #000000;
+  color: aliceblue;
+}

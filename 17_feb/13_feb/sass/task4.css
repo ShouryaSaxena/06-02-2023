@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  color: #fff;
+  background-image: url("/13_feb/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: inline-block;
+}
+body .nav {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  padding: 1rem 2rem;
+  background-color: rgba(41, 38, 38, 0.5411764706);
+  position: fixed;
+}
+body .nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 25px;
+}
+body .nav ul li {
+  float: left;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+body .nav ul li a {
+  display: inline;
+  padding: auto 75px;
+}
+body .nav ul li a:link {
+  color: red;
+}
+body .nav ul li a:visited {
+  color: rgba(7, 196, 7, 0.905);
+}
+body .nav ul li a:hover {
+  color: hotpink;
+}
+body .nav ul li a:active {
+  color: blue;
+}
+body .division {
+  width: 75%;
+  margin-top: 7rem;
+  padding: 30px 20px;
+}
+body h1 {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  font-size: 400%;
+  font-weight: auto;
+  line-height: 200%;
+  margin: 10px 50px;
+}
+body .details {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: lighter;
+  line-height: 150%;
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body .details .gif {
+  width: 25%;
+  border: 8px solid black;
+  border-radius: 25px;
+  margin: 20px auto;
+}
+body .main {
+  color: #fff;
+  font-size: larger;
+  font-weight: 500;
+  line-height: 200%;
+  font-family: Verdana, "Geneva", Tahoma, "sans-serif";
+}
+body .foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  box-shadow: 0px 10px 30px 0px;
+  height: 20%;
+}
+body .foot a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-style: oblique;
+  line-height: 175%;
+}
+body .foot i {
+  padding-right: 15px;
+}/*# sourceMappingURL=task4.css.map */
