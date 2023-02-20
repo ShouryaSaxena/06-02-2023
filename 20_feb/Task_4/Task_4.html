@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keywords in JS</title>
+</head>
+
+<!----------------------------------------------Variables / Keywords----------------------------------------------  
+
+1. var: var keyword is used to declare a variable in JavaScript. var allows us to re-declare, re-assign values of any object/variable. 
+
+2. const: const is a keyword which is used to declare the constant variables. when declared, a constant variable cannot be re-declared or re-assigned a new value.
+   * const array elements can be replaces, updated removed using operations such as push, pop, etc.
+
+3. let: let keyword is used to declare a variable who's value we want to be remained same throughout the program.
+   * let variable can neaither be re-declared or re-assigned a new value once done.
+----------------------------------------------------------------------------------------------------------------->
+
+<script>
+
+    // -----------------------------var can be re-declared and can change values at any scope ----------------------
+
+    var a = 0;
+    for(a;a<5;a++){
+        console.log(a);
+    }
+
+    var a = 10;
+    for(a;a>=0;a-=2){
+        console.log(a);
+    }
+
+    // ------------------------once declared and assigned a value, b, c and d cannot undergo changes withing same scope.
+
+    let b = "Welcome";
+    let c = " Back!";
+
+    let d = b + c;
+    document.write(d+ "<br><br>");
+
+    // -------------------------Performing operations on a constant array--------------------------------------
+
+    const cars = ["BMW", "Volvo", "Jaguar", "Audi","Range Rover","Aston Martin"];
+
+    cars[3] = "Mercedes";
+    document.write(cars + "<br><br>");
+
+    cars.push("Audi");
+    document.write(cars + "<br><br>");
+
+    cars.shift();
+    document.write(cars + "<br><br>");
+
+    cars.unshift("Bentley");
+    document.write(cars + "<br><br>");
+
+
+</script>
+
+
+
+<body>
+    
+</body>
+</html>
