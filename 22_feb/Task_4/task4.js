@@ -1,3 +1,5 @@
+
+
 SI = () => {
 
     var principle = document.getElementById("pa");
@@ -7,8 +9,22 @@ SI = () => {
     a = parseFloat(principle.value);
     b = parseFloat(rate.value);
     c = parseFloat(years.value);
-    document.getElementById('txt').innerHTML = `Simple Interest (S.I.) is: ${(a * b * c)/100} `;
+    if (a!=null && b!=null && c!=null) {
+        try {
+            if (a<0 || b<0 || c<0) {
+                throw "Invalid Values!!"
+            }
+            else{
+                document.getElementById('txt').innerHTML = `Simple Interest (S.I.) is: ${(a * b * c)/100} `;
+            }
+        } catch (error) {
+            document.getElementById('txt').innerHTML = `Error: Enter Positive Values Only `;
+        }
+        
+    }
+    
 }
+
 
 CI = () => {
 
@@ -19,5 +35,20 @@ CI = () => {
     a = parseFloat(principle.value);
     b = parseFloat(rate.value);
     c = parseFloat(years.value);
-    document.getElementById('txt').innerHTML = `Compound Interest (C.I.) is: ${a * (Math.pow((1 + b /100),c))} `;
+
+    if (a!=null && b!=null && c!=null) {
+        try {
+            if (a<0 || b<0 || c<0) {
+                throw "Invalid Values!!"
+            }
+            else{
+                document.getElementById('txt').innerHTML = `Compound Interest (C.I.) is: ${a * (Math.pow((1 + b /100),c))} `;
+            }
+        } catch (error) {
+            document.getElementById('txt').innerHTML = `Error: Enter Positive Values Only `;
+        }
+        
+    }
+    
+    
 }
