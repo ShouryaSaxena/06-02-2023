@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <script src="/22_feb/Task_4/task4.js"></script>
+</head>
+
+<style>
+    h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .locs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .opts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 3rem;
+    }
+
+    .txt{
+        margin: 2rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <h1>Interest Calculator...</h1>
+
+    <div class="locs">
+        <label for="pa">Enter the Princple Amount: </label>
+        <input type="number" name="pa" id="pa" required>
+    </div>
+
+    <div class="locs">
+        <label for="r">Enter the Interest Rate: </label>
+        <input type="number" name="r" id="r" required>
+    </div>
+    
+    <div class="locs">
+        <label for="t">Enter the Time (in years): </label>
+        <input type="number" name="t" id="t" required>
+    </div>
+      
+    <div class="opts">
+        <button onclick="SI(pa,r,t)">Simple Interest (S.I.)</button>
+        <button onclick="CI(pa,r,t)">Compound Interest (C.I.)</button>
+    </div>
+
+    <div class="locs">
+        <p id="txt"></p>
+    </div>
+
+</body>
+</html>
