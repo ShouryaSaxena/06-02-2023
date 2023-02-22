@@ -6,7 +6,7 @@ ArrayofObjects = () => {
 
     alert("Kindly Visit The Console...");
 
-    const companies = [
+    const companies = [                                                            // Array of Objects.
         { name: "Company One", category: "Finance", start: 1981, end: 2003 },
         { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
         { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
@@ -18,7 +18,9 @@ ArrayofObjects = () => {
         { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
     ];
 
-    const ages = [33, 12, 20, 15, 7, 63, 21, 44, 61, 13, 58, 25, 32];
+
+
+    const ages = [33, 12, 20, 15, 7, 63, 21, 44, 61, 13, 58, 25, 32];               // Simple Array.
 
 
 
@@ -85,6 +87,46 @@ ArrayofObjects = () => {
     //Get total years for companies...
     const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
     console.log(totalYears);
+
+    //----------------------------------Reverse() Method----------------------------
+    
+    const revAges = ages.reverse();
+    console.log(revAges);
+
+    //--------------------Random sorting using The Fisher Yates Method--------------
+    
+    randomsort =() => {
+      const copy = ages;
+      for (let i = copy.length -1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i+1));
+        let k = copy[i];
+        copy[i] = copy[j];
+        copy[j] = k;
+      }
+      console.log(copy);
+    }
+
+    setTimeout( () => {
+      randomsort();
+    }, 1000);
+    setTimeout( () => {
+      randomsort();
+    }, 2000);
+    setTimeout( () => {
+      randomsort();
+    }, 3000);
+    setTimeout( () => {
+      randomsort();
+    }, 4000);
+
+
+    //-------------------------------Max and Min elements------------------------------
+
+    const maxAge = Math.max.apply(null,ages);
+    console.log("Max Age is:" + maxAge);
+
+    const minAge = Math.min.apply(null,ages);
+    console.log("Min Age is:" + minAge);
 
 
 }
