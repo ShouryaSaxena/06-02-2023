@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <script src="/23_feb/Task_2/task2.js"></script>
+</head>
+
+<style>
+
+    h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .locs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    #text{
+        font-size: 1.2rem;
+        font-style: normal;
+    }
+
+    .opts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 3rem;
+    }
+    
+</style>
+
+<body>
+
+    <h1 id="head">Getting Started With JavaScript...</h1>
+    
+    <div class="locs">
+        <p id="text">
+            JavaScript is a popular programming language that has a wide range of applications.
+
+            JavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.
+        </p>
+
+        <div class="locs">
+            <label for="name">Enter Your Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <img src="/23_feb/images/img1.jpg" alt="img1" id="image">
+    </div>
+
+
+    <div class="opts">
+        <button onclick="Go()">Submit</button>
+    </div>
+
+    
+</body>
+</html>
