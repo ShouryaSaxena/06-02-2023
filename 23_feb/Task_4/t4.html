@@ -18,23 +18,26 @@
     <div class="opts">
         <div class="locs">
             <label for="from">Boarding: </label>
-            <select name="from" id="board" onchange="match1(this);">
+            <select name="from" id="board" onchange="match1(this);"  required>
+                
             </select>
         </div>
     
         <div class="locs">
             <label for="to">Drop-off: </label>
-            <select name="to" id="drop" onchange="match2(this);">
+            <select name="to" id="drop" onchange="match2(this);"  required>
+                
             </select>
         </div>
 
         <button onclick="printing()">Set this Route</button>
 
     </div>
-    <div class="opts">
+    <div class="opt1">
         <p id="out"></p>
         <button onclick="clear()">Clear</button>
     </div>
+
 
     <script src="/23_feb/Task_4/t4.js"></script>
 </body>

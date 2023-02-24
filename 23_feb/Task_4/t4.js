@@ -1,6 +1,5 @@
 
-let arr = ["Delhi","Mumbai","Lucknow","Kashmir","Goa","Jaipur"];
-const route = [];
+let arr = ["Select","Delhi","Mumbai","Lucknow","Kashmir","Goa","Jaipur"];
 
 let s = document.getElementById('board');
 let d = document.getElementById('drop');
@@ -21,39 +20,53 @@ for(let i = 0; i < arr.length; i++){
 
 match1 = (select) => {
     let sel = select.selectedIndex;
+
+
     for(let i = 0; i < d.options.length; i++){
+        if(i==0){
+            d.options[i].disabled=true;
+            continue;
+        }
         if(i === sel){
             d.options[sel].disabled = true;
             continue;
         }
-        s.options[i].disabled = false;
+        d.options[i].disabled = false;
     }
+    
 }
+
+
 
 match2 = (select) => {
     let sel = select.selectedIndex;
     
     for(let i = 0; i < s.options.length; i++){
+        if(i==0){
+            s.options[i].disabled=true;
+            continue;
+        }
         if(i === sel){
             s.options[sel].disabled = true;
             continue;
         }
-        d.options[i].disabled = false;
+        s.options[i].disabled = false;
     }
+    
 } 
 
-var A = [];
+var routes = [];
 
 printing = () => {
     let source = document.getElementById('board').value;
     let dest = document.getElementById('drop').value;
-    let disp = `${s.selectedIndex}${d.selectedIndex}`;
-    let jso = JSON.stringify(disp);
-    A+=jso;
-    console.log(A);
 
-  
-    document.getElementById('out').innerHTML += `<br>${disp}`;
+    routes.push({"From": source, "To": dest})
+    
+
+    document.getElementById('out').innerHTML += `<br>${source} to ${dest}`;
+    console.log(routes);
+
 
 }
 
