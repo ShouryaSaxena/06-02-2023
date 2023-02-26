@@ -1,9 +1,13 @@
 
+
+//-------Array of Cities--------
 let arr = ["Select","Delhi","Mumbai","Lucknow","Kashmir","Goa","Jaipur"];
 
 let s = document.getElementById('board');
 let d = document.getElementById('drop');
 
+
+//-----------------------Adding Options for Source----------------------------
 for(let i = 0; i < arr.length; i++){
     let opt = document.createElement('option');
     opt.textContent = arr[i];
@@ -11,6 +15,8 @@ for(let i = 0; i < arr.length; i++){
     s.appendChild(opt);
 }
 
+
+//--------------------Adding Options for Destination---------------------------
 for(let i = 0; i < arr.length; i++){
     let opt2 = document.createElement('option');
     opt2.textContent = arr[i];
@@ -18,6 +24,8 @@ for(let i = 0; i < arr.length; i++){
     d.appendChild(opt2);
 }
 
+
+// -------------------------Matching and disable for Source select-----------------------
 match1 = (select) => {
     let sel = select.selectedIndex;
 
@@ -37,7 +45,7 @@ match1 = (select) => {
 }
 
 
-
+// -------------------------Matching and disable for Destination select----------------------
 match2 = (select) => {
     let sel = select.selectedIndex;
     
@@ -55,26 +63,31 @@ match2 = (select) => {
     
 } 
 
-const routes = [];
+const routes = [];                 // Constant array of objects for storing the routes.
 
+
+//----------------------------Checking old routes and displaying all-----------------
 printing = () => {
     let source = document.getElementById('board').value;
     let dest = document.getElementById('drop').value;
     
-    for(let i =0;i<routes.length;i++){
-        if(routes[i].from === source && routes[i].to === dest ){return}
+    for(let i =0;i<routes.length;i++){                     //checking if there's already present same route or not.
+        if(routes[i].from === source && routes[i].to === dest ){
+            return;      //if already present, no need to push it.
+        }
     }
     
     
-    var r = {"From": source, "To": dest};
+    var r = {"From": source, "To": dest};       //Pushing the new route info as a new object.
     routes.push(r);
 
-    document.getElementById('out').innerHTML += `<br>${source} to ${dest}`;
+    document.getElementById('out').innerHTML += `<br>${source} to ${dest}`;     //Displaying the routes choosen.
     console.log(routes);
 
 
 }
 
+//-------------------Clear the display (list of routes)-------------------
 clear = () => {
     document.getElementById('out').innerHTML =" ";
 }
