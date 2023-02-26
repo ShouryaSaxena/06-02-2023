@@ -55,14 +55,19 @@ match2 = (select) => {
     
 } 
 
-var routes = [];
+const routes = [];
 
 printing = () => {
     let source = document.getElementById('board').value;
     let dest = document.getElementById('drop').value;
-
-    routes.push({"From": source, "To": dest})
     
+    for(let i =0;i<routes.length;i++){
+        if(routes[i].from === source && routes[i].to === dest ){return}
+    }
+    
+    
+    var r = {"From": source, "To": dest};
+    routes.push(r);
 
     document.getElementById('out').innerHTML += `<br>${source} to ${dest}`;
     console.log(routes);
@@ -71,5 +76,5 @@ printing = () => {
 }
 
 clear = () => {
-    document.getElementById('out').innerHTML = " ";
+    document.getElementById('out').innerHTML =" ";
 }
