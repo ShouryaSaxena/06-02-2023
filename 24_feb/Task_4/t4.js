@@ -133,7 +133,7 @@ printing = () => {
 //-------------------Clear the display (list of routes)-------------------
 function clearroute() {
     document.getElementById("out").innerHTML = "";
-    d.selectedIndex = 0;
-    s.selectedIndex = 0;
+    location.reload;                // Relodes the Page;
+    console.clear();
 }
 
