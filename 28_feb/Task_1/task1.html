@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry and Display using Typescript</title>
+    
+</head>
+
+<style>
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        width: 80%;
+        height: 50%;
+        background-color: aquamarine;
+    }
+    .container {
+        display: flex;
+        margin: 0.5rem;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1rem;
+
+    }
+</style>
+
+<body>
+    <form action="" id="form">
+        <div class="container">
+            <label for="Fname">First Name: </label>
+            <input type="text" name="Fname" id="Fname" required />
+            
+        </div>
+        <div class="container">
+            <label for="Pname">Last Name: </label>
+            <input type="text" name="Lname" id="Lname" required />
+            
+        </div>
+        <div class="container">
+            <label for="age">Your Age: </label>
+            <input type="number" name="age" id="age" required />
+           
+        </div>
+        <div class="container">
+            <input type="button" id="submit" value="submit" onclick="submitting()">
+            <button type="button" onclick="display()">Display..</button>
+        </div>
+    </form>
+
+    <script src="task1.js" defer></script>
+</body>
+
+</html>
