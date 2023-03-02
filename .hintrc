@@ -48,6 +48,12 @@
         "list": "off",
         "definition-list": "off"
       }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
     ]
   }
 }
