@@ -1,19 +1,21 @@
 
-const Arr = ['1','a','2','b','3','c','4','d','5','e'];
-//console.log(typeof(Arr));
-let val: Array<String|Number>;
-val = [];
+//------------------------------String Array-----------------------
+const strArray = ['1', 'a', '2', 'b', '3', 'c', '4', 'd', '5', 'e'];
 
-for(let i = 0; i <Arr.length; i++){
-    if(!isNaN(parseFloat(Arr[i]))){
+//console.log(typeof(Arr));
+let newArray: Array<String | Number>;
+newArray = [];
+
+for (let i = 0; i < strArray.length; i++) {
+    if (!isNaN(parseFloat(strArray[i]))) {
         //console.log(Arr[i]);
-        let num = parseInt(Arr[i]);
-        val[i] = num;
-        console.log(num+" is of type " +typeof(num));
+        let num: number = parseInt(strArray[i]);
+        newArray[i] = num;
+        console.log(num + " is of type " + typeof (num));
     }
-    else{
-       let low = Arr[i].toUpperCase();
-       val[i] = low;
+    else {
+        let low: string = strArray[i].toUpperCase();
+        newArray[i] = low;
     }
 }
-console.log(val);
+console.log(newArray);

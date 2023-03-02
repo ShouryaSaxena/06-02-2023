@@ -6,30 +6,30 @@
 
 
 // Base (Parent) class........
-class Vehicle {
-    public A: string;
-    constructor(A: string) {
-        this.A = A;
+class carModel {
+    public model: string;
+    constructor(model: string) {
+        this.model = model;
     }
-    Type(A: string): string {
-        console.log(`\n${A} car section....`)
-        return A;
+    Type(model: string): string {
+        console.log(`\n${model} car section....`)
+        return model;
     }
 }
 
 //---------------Single Inheriance------------------
 
-class Car extends Vehicle {        //derived class car inherites Parent class Vehicle.
-    protected B: string;
-    constructor(A: string, B:string) {
-        super(A);
-        this.B = B;
+class carName extends carModel {        //derived class car inherites Parent class Vehicle.
+    protected name: string;
+    constructor(model: string, name: string) {
+        super(model);
+        this.name = name;
     }
-    Brand(A: string, B: string): string {
-        this.Type(A);
-        this.B = B;
-        console.log(`${this.B} is a ${this.A} Model.`);
-        return B;
+    Brand(model: string, name: string): string {
+        this.Type(model);
+        this.name = name;
+        console.log(`${this.name} is a ${this.model} Model.`);
+        return name;
     }
 }
 
@@ -38,24 +38,24 @@ class Car extends Vehicle {        //derived class car inherites Parent class Ve
 //Derived class carModel inherits another Derived class Car
 //which has inherited the properties of the Parent class Vehicle...
 
-class carModel extends Car {
-    private C: number;
-    constructor(A: string, B:string, C:number) {
-        super(A,B);
-        this.C = C;
+class carPrice extends carName {
+    private cost: number;
+    constructor(model: string, name: string, cost: number) {
+        super(model, name);
+        this.cost = cost;
     }
-    Price(A: string, B: string, C: number): string {
-        this.Brand(A, B);
-        console.log(`${this.B} worth ${this.C} is not as costlier as other ${this.A} cars.`);
-        return B;
+    Price(model: string, name: string, cost: number): number {
+        this.Brand(model, name);
+        console.log(`${this.name} worth ${this.cost} is not as costlier as other ${this.model} cars.`);
+        return cost;
     }
 }
 
 //-------------------Object creation-------------------------
 
-let obj1 = new Car("F1 race", "Buggati");
+let obj1 = new carName("F1 race", "Buggati");
 obj1.Brand("F1 race", "Buggati");
 
-let obj2 = new carModel("Sports", "Polo GT", 1050000);
+let obj2 = new carPrice("Sports", "Polo GT", 1050000);
 obj2.Price("Sports", "Polo GT", 1050000);
 obj2.Price("Classic", "Jaguar", 31900000);

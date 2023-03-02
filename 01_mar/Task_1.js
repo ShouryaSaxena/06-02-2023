@@ -17,52 +17,52 @@ var __extends = (this && this.__extends) || (function () {
 //  1. Single inheritance: Derived class can inherit properties and behavior from at most one parent class.
 //  2. Multilevel : Derived class inherits properties of another derived class which has inherited the properties of some parent class.
 // Base (Parent) class........
-var Vehicle = /** @class */ (function () {
-    function Vehicle(A) {
-        this.A = A;
+var carModel = /** @class */ (function () {
+    function carModel(model) {
+        this.model = model;
     }
-    Vehicle.prototype.Type = function (A) {
-        console.log("\n".concat(A, " car section...."));
-        return A;
+    carModel.prototype.Type = function (model) {
+        console.log("\n".concat(model, " car section...."));
+        return model;
     };
-    return Vehicle;
+    return carModel;
 }());
 //---------------Single Inheriance------------------
-var Car = /** @class */ (function (_super) {
-    __extends(Car, _super);
-    function Car(A, B) {
-        var _this = _super.call(this, A) || this;
-        _this.B = B;
+var carName = /** @class */ (function (_super) {
+    __extends(carName, _super);
+    function carName(model, name) {
+        var _this = _super.call(this, model) || this;
+        _this.name = name;
         return _this;
     }
-    Car.prototype.Brand = function (A, B) {
-        this.Type(A);
-        this.B = B;
-        console.log("".concat(this.B, " is a ").concat(this.A, " Model."));
-        return B;
+    carName.prototype.Brand = function (model, name) {
+        this.Type(model);
+        this.name = name;
+        console.log("".concat(this.name, " is a ").concat(this.model, " Model."));
+        return name;
     };
-    return Car;
-}(Vehicle));
+    return carName;
+}(carModel));
 //--------------------MultiLevel Inheritance---------------------
 //Derived class carModel inherits another Derived class Car
 //which has inherited the properties of the Parent class Vehicle...
-var carModel = /** @class */ (function (_super) {
-    __extends(carModel, _super);
-    function carModel(A, B, C) {
-        var _this = _super.call(this, A, B) || this;
-        _this.C = C;
+var carPrice = /** @class */ (function (_super) {
+    __extends(carPrice, _super);
+    function carPrice(model, name, cost) {
+        var _this = _super.call(this, model, name) || this;
+        _this.cost = cost;
         return _this;
     }
-    carModel.prototype.Price = function (A, B, C) {
-        this.Brand(A, B);
-        console.log("".concat(this.B, " worth ").concat(this.C, " is not as costlier as other ").concat(this.A, " cars."));
-        return B;
+    carPrice.prototype.Price = function (model, name, cost) {
+        this.Brand(model, name);
+        console.log("".concat(this.name, " worth ").concat(this.cost, " is not as costlier as other ").concat(this.model, " cars."));
+        return cost;
     };
-    return carModel;
-}(Car));
+    return carPrice;
+}(carName));
 //-------------------Object creation-------------------------
-var obj1 = new Car("F1 race", "Buggati");
+var obj1 = new carName("F1 race", "Buggati");
 obj1.Brand("F1 race", "Buggati");
-var obj2 = new carModel("Sports", "Polo GT", 1050000);
+var obj2 = new carPrice("Sports", "Polo GT", 1050000);
 obj2.Price("Sports", "Polo GT", 1050000);
 obj2.Price("Classic", "Jaguar", 31900000);

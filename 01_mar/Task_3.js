@@ -1,17 +1,19 @@
-var Arr = ['1', 'a', '2', 'b', '3', 'c', '4', 'd', '5', 'e'];
+"use strict";
+//------------------------------String Array-----------------------
+const strArray = ['1', 'a', '2', 'b', '3', 'c', '4', 'd', '5', 'e'];
 //console.log(typeof(Arr));
-var val;
-val = [];
-for (var i = 0; i < Arr.length; i++) {
-    if (!isNaN(parseFloat(Arr[i]))) {
+let newArray;
+newArray = [];
+for (let i = 0; i < strArray.length; i++) {
+    if (!isNaN(parseFloat(strArray[i]))) {
         //console.log(Arr[i]);
-        var num = parseInt(Arr[i]);
-        val[i] = num;
+        let num = parseInt(strArray[i]);
+        newArray[i] = num;
         console.log(num + " is of type " + typeof (num));
     }
     else {
-        var low = Arr[i].toUpperCase();
-        val[i] = low;
+        let low = strArray[i].toUpperCase();
+        newArray[i] = low;
     }
 }
-console.log(val);
+console.log(newArray);

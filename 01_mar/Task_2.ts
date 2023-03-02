@@ -24,7 +24,7 @@ abstract class Details {               // Abstract class Details. We cannot crea
 
 class user extends Details {
     constructor(name: string, city: string, age: number) {       //Polymorphism helps in overloading and overriding a method or function.
-        super(name, city, age);             //parent class members can be accessed using super keyword.
+        super(name, city, age);        //parent class members can be accessed using super keyword.
         console.log(`${name} belongs to ${city}, and is ${age}yrs old.`)
     }
 
@@ -32,20 +32,20 @@ class user extends Details {
 
 //-------------------------Object Creation-----------------------------
 
-let u1 = new user("Shourya", "Jaipur", 21);
-let u2 = new user("Yashraj", "Rudrapur", 22);
-let u3 = new user("Nancy", "Delhi", 20);
+let user1 = new user("Shourya", "Jaipur", 21);
+let user2 = new user("Yashraj", "Rudrapur", 22);
+let user3 = new user("Nancy", "Delhi", 20);
 
 
 //-----------------------Function Overloading in TS---------------------------
 
 //function-1
-function add(a:string, b:string):string;       // Concatination of two Strings.
+function add(str1: string, str2: string): string;       // Concatination of two Strings.
 
 //function-2
-function add(a:number, b:number): number;      // Addition of two Numbers.
+function add(num1: number, num2: number): number;      // Addition of two Numbers.
 
-function add(a: any, b:any): any {
+function add(a: any, b: any): any {
     return a + b;
 }
 
