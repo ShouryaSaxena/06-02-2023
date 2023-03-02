@@ -137,7 +137,7 @@ var chart = new CanvasJS.Chart("chartContainer4",
             },
         ]
     });
-=======
+
 
 /*----------------------------------------Charts in JavaScript--------------------------------------------
 
