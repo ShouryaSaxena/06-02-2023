@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .t1,th,td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -14,21 +14,4 @@
     margin-right: auto;
     width: 50%;
     line-height: 200%;
-=======
-.t1,th,td{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    text-align: left;
-    
-}
-
-.t1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    line-height: 200%;
->>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }
