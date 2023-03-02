@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /*------------------------------------------------Head Nav bar------------------------------------------------*/
+=======
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 body {
   background-color: rgba(212, 226, 225, 0.1803921569);
   justify-content: center;
@@ -12,8 +15,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+<<<<<<< HEAD
   /*-----------------------------------------------Mid Division----------------------------------------------------*/
   /*---------------------------------------------------Image Grid-------------------------------------------------*/
+=======
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }
 body #menu ul {
   list-style: none;
@@ -92,6 +98,7 @@ body .division .main {
 body .division .main:hover {
   color: #ff0000;
 }
+<<<<<<< HEAD
 body .grid {
   display: flex;
   width: 100%;
@@ -155,6 +162,8 @@ body .grid .gallery:hover {
   top: -10px;
   background-color: rgba(216, 212, 212, 0.849);
 }
+=======
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 body #foot {
   display: flex;
   flex-direction: column;

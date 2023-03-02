@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*------------------------------Table CSS----------------------------*/
 
@@ -142,4 +143,150 @@
 
 .foot i{
     padding-right: 15px;
+=======
+
+/*------------------------------Table CSS----------------------------*/
+
+.t1,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;  
+    tab-size: auto;
+}
+
+.t1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    line-height: 225%;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/*-----------------------CSS for the Body------------------------------*/
+
+    body{
+        
+        color: aliceblue;
+        background-image: url("/13_feb/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: inline-block;
+        
+    }
+    
+    .division{
+        
+        width: 75%;
+        margin: 20px 50px;
+        padding: 30px 10px;
+        
+    }
+    
+    h1{
+        text-align: center;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        font-size: 400%;
+        margin: 10px 50px;
+        line-height: 200%;
+    }
+    
+   
+    .main{
+        color: rgb(255, 255, 255); 
+        font-size: larger; 
+        font-weight: 500; 
+        line-height: 200%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    
+    /* --------------------------unvisited link ------------------------------*/
+    a:link {
+        color: red;
+      }
+      
+      /*------------------------- visited link -------------------------------*/
+      a:visited {
+        color: rgba(5, 184, 5, 0.92);
+      }
+      
+      /*----------------------- mouse over link -------------------------------*/
+      a:hover {
+        color: hotpink;
+      }
+      
+      /*-------------------------selected link--------------------------------*/
+      a:active {
+        color: blue;
+      }
+    
+/*------------------------------Styling the List------------------------------*/
+
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        font-size: 25px;
+      }
+      
+      li {
+        float: left;
+        padding-left: 100px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      
+      li a {
+        display:  inline;
+        padding: auto 75px;
+      }
+    
+/*------------------------------------Nav Bar-----------------------------------*/
+
+      .nav{
+        width: 100%;
+        height: 10%;
+        margin: 0px auto;
+        padding: 00px 20px;
+        background-color: #2926268a;
+        position: fixed;
+      }
+
+
+/*-------------------------Foot (Reach Us Styling)------------------------------------*/
+
+/*-------icons----------*/
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    box-shadow: 0px 10px 30px 0px;
+    height: 20%;
+}
+
+/*----------------------------------Contact links----------------------------------*/
+
+.foot a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    font-style: oblique;
+    line-height: 175%;
+}
+
+.foot i{
+    padding-right: 15px;
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

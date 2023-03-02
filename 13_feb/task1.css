@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* id selector */
 
@@ -37,4 +38,45 @@
     max-width: 80%;
     margin: 10px auto;
     padding: 30px 20px;
+=======
+
+/* id selector */
+
+#myId {                                
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  } 
+
+  /* class selector */
+
+  #myClass {
+    background-color: rgb(225, 230, 173);
+    color: black;
+    padding: 40px;
+    text-align: center;
+  } 
+
+  /* Universal selector */
+
+  * [lang^="en"] {
+    color: green;
+  }
+
+  *.warning {
+    color: red;
+  }
+  
+  *#maincontent {
+    border: 1px solid blue;
+  }
+
+  /* Element selector */
+
+  div{
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 30px 20px;
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
   }

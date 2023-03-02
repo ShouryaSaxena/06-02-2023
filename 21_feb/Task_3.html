@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,4 +62,69 @@
 
     <button onclick="ArrayofObjects()">Continue to Array of Objects...</button>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects in JScript</title>
+    
+    <script src="/21_feb/task3.js"></script>
+</head>
+
+
+<style>
+    h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 3rem;
+    }
+</style>
+
+
+<body>
+    <h1>Array in JavaScript and it's Methods...</h1>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Jaguar", "Audi","Range Rover","Aston Martin"];       // Array of Objects
+    
+        cars[3] = "Mercedes";                     // To display the element/object stored at 3rd index in the array.
+        document.write(cars + "<br><br>");
+    
+        cars.push("Audi");                        // To Push(add) the object at the end of the array.
+        document.write(cars + "<br><br>");
+    
+        cars.shift();                             // To Shift the array by 1 index and remove the element on the first index.
+        document.write(cars + "<br><br>");
+    
+        cars.unshift("Bentley");                  // To Add an object at the start of the array and shift other elements by 1 index.
+        document.write(cars + "<br><br>");
+
+        console.log(cars.length);                 // Finds the length of the array i.e., no. of objects present.
+
+        console.log(cars.toString());             // toString method converts entire array to a string.
+
+        console.log(cars.toString().length);      // Shows the length of the array present as a String.
+
+        document.write(cars.join(" * ") + "<br><br>");         // Here .join() method joins * after every element of array.
+
+        console.log(delete cars[4]);              // Checks whether any element is present at index 4, and if true, will delete that element.
+        
+        console.log(cars);                        // displays the array with empty space for index who's element got deleted.
+
+        const Sites = ["Mountain","Desert","Rocks","Plains"];
+
+        const newarr = cars.concat(Sites);         // Concatinating two arrays into a new array of objects.
+        document.write(newarr + "<br><br>");
+
+        newarr.splice(4,9, "Toyota", "Beach");     // here, 9 elements starting from index 4 have been removed and then these two elements are added. 
+        document.write(newarr + "<br><br>");
+
+    </script>
+
+    <button onclick="ArrayofObjects()">Continue to Array of Objects...</button>
+</body>
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 </html>

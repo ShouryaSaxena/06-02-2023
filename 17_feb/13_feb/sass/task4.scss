@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $fam1: Georgia, 'Times New Roman', Times, serif;
 $fam2: Verdana, 'Geneva', Tahoma, 'sans-serif';
@@ -130,4 +131,138 @@ body{
     }
 
 
+=======
+
+$fam1: Georgia, 'Times New Roman', Times, serif;
+$fam2: Verdana, 'Geneva', Tahoma, 'sans-serif';
+$col1: #fff;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin place{
+    color: $col1;
+    background-image: url("/13_feb/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+}
+
+@mixin f($s,$w,$h) {
+    font-size: $s; 
+    font-weight: $w; 
+    line-height: $h;
+}
+
+body{
+
+    @include place;
+
+    .nav{
+        width: 100%;
+        height: fit-content;
+        margin: 0px auto;
+        padding: 1rem 2rem;
+        background-color: #2926268a;
+        position: fixed;
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            font-size: 25px;
+
+            li {
+                float: left;
+                padding-left: 100px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+
+                a {
+                    display:  inline;
+                    padding: auto 75px;
+
+                    &:link {
+                        color: red;
+                      }
+                    &:visited {
+                        color: rgba(7, 196, 7, 0.905);
+                      }
+                    &:hover {
+                        color: hotpink;
+                      }
+                    &:active {
+                        color: blue;
+                      }
+                  }
+              }
+          }
+      }
+
+    .division{
+    
+        width: 75%;
+        margin-top: 7rem;
+        padding: 30px 20px;
+    }
+    h1{
+        text-align: center;
+        border-bottom: 1px solid $col1;
+        @include f(400%,auto,200%);
+        margin: 10px 50px;
+        
+    }
+    .details{
+        text-align: center;
+        margin-top: 50px; 
+        @include f(25px,lighter,150%);
+        font-style: oblique;
+        font-family: $fam1;
+        .gif{
+            width: 25%;
+            border: 8px solid darken($col1,100%);
+            border-radius: 25px;
+            margin: 20px auto;
+            
+        }
+    }
+    .main{
+        color: $col1; 
+        @include f(larger,500,200%);
+        font-family: $fam2;
+    }
+    
+
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($col1,100%);
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        box-shadow: 0px 10px 30px 0px;
+        height: 20%;
+
+        a{
+            padding: 10px;
+            text-decoration: none;
+            color: $col1;
+            font-style: oblique;
+            line-height: 175%;
+        }
+        i{
+            padding-right: 15px;
+        }
+    }
+
+
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

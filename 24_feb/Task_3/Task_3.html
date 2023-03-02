@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,4 +52,59 @@
     <p id="p">Mouse Event</p>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events in JS</title>
+</head>
+
+<style>
+    h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container{
+        margin-bottom: 5rem;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    #btn{
+        margin: 10rem;
+        padding: 1.2rem;
+        font-size: 15px;
+    }
+
+    #p{
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Mouse Events in JavaScript</h1>
+    <div class="container">
+        <button id="btn" 
+        
+        
+        onmouseover="document.getElementById('p').innerHTML = `<br>Mouse Entered into the Element...`"
+        onmouseenter="document.getElementById('p').innerHTML += `<br>Hovering over the Element...`"
+        onmousewheel="document.getElementById('p').innerHTML += `<br>Mouse Scrolling over the Element...`"
+        onmousedown="document.getElementById('p').innerHTML += `<br>Mouse Clicked the Element...`"
+        onmouseup="document.getElementById('p').innerHTML += `<br>Mouse Click removed Up on Element...`"
+        onmouseleave="document.getElementById('p').innerHTML = `<br>Mouse Left the Element...`"
+        >
+            Click Me..!</button>
+
+    </div>
+    <p id="p">Mouse Event</p>
+
+</body>
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 </html>

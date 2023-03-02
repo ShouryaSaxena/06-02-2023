@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -62,4 +63,70 @@
         
         <p style="color: aliceblue;"> Input:<p id = "display_message"></p><br> </p><br>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task1.css">
+        <title>HTML Form with Outputs</title>
+        <script type="text/JavaScript">
+
+        function showMessage(){  
+
+        //fetching elements    
+       
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var age = document.getElementById("age").value;
+
+
+         // for radio buttons      
+         
+
+        function disradio(){
+            var gen = document.getElementsByName("gender");
+            for(i=0;i<gen.length;i++){
+                if(gen[i].checked){ 
+                    return gen[i].value;
+                }
+            }
+        }
+        var res = disradio();
+
+        // displaying all the messages on the page 
+        
+        display_message.innerHTML= " FirstName: "+fname + " LastName:"+lname+" Age:"+ age + " Gender: "+res; }
+        </script>
+    </head>
+    <body>
+        <h1>This Is a Sample HTML Form</h1>
+        <form id="form">
+           <div class="form-control">
+                <label for="fname">First Name:</label>
+                <input type="text" id = "fname" placeholder="Enter First Name"><br>
+            </div> 
+            <div class="form-control">
+                <label for="lname">Last Name:</label>
+                <input type="text" id = "lname" placeholder="Enter Last Name"><br>
+            </div>
+            <div class="form-control">
+                <label for="age">Age:</label>
+                <input type="number" id = "age" placeholder="Enter Your Age"><br>
+            </div>
+                
+
+            <label for="gender">Gender:</label>
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Other
+            <input type="button" onclick="showMessage()" value="submit" id="button" /><br>
+        </form>
+        <br>
+        
+
+        <!-- section to display elements -->
+        
+        <p style="color: aliceblue;"> Input:<p id = "display_message"></p><br> </p><br>
+    </body>
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 </html>

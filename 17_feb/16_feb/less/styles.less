@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @primarycolor : #ffffff;
 @secondarycolor : #d4e2e12e;
@@ -174,3 +175,181 @@ body {
 }
 
 
+=======
+
+@primarycolor : #ffffff;
+@secondarycolor : #d4e2e12e;
+@basecolor: #000;
+@neg_margin: 0px;
+@padding: 20px;
+@x-larger: 30px;
+@fontfamily: Georgia, 'Times New Roman', Times, serif;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.image{
+    background-image: url("/14_feb/images/bg.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.display(@f){
+    display: flex;
+    flex-direction: @f;
+}
+
+.placement(@w,@m){
+    width: @w;
+    margin-left: @m;
+    margin-right: @m;
+}
+
+.textstyle(@a,@b){
+    text-align: center;
+    margin-top: @a; 
+    margin-bottom: @a;
+    font-size: @b;
+    line-height: @b;
+}
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hovertext(@h) when (lightness(@h)>=50%){
+    color: if((iscolor(@basecolor)),@basecolor,red);
+    color: #ffffff;
+    
+}
+
+.hovertext(@h) when (lightness(@h)<50%){
+    color: rgb(255, 0, 0);
+}
+
+
+body {
+   background-color: @secondarycolor;
+   justify-content: center;
+   .image;
+
+   #menu {
+    ul {
+        list-style: none;
+        .flex;
+        background-color: @secondarycolor;
+        margin: @neg_margin;
+        padding: @padding;
+        @media screen and(max-width:800px) {
+            display: block;
+        }
+        li {
+            padding: 8px 45px;
+            a {
+                text-decoration: none;
+                color: @primarycolor;
+                font-size: 2rem;
+            }
+            &:hover {
+                background-color: lighten(@secondarycolor, 35%);
+                font-size: @x-larger;
+                border-radius: 25px;
+                a {
+                    text-decoration: none;
+                    color:@basecolor;
+                    font-size: 2rem;
+                }
+            }
+        }
+      }
+    }
+
+  .division{
+    
+    width: 75%;
+    padding: 0px 20px;
+    .placement(80%,auto);
+    
+    h1{
+        .textstyle(2rem,4rem);
+        color: rgb(0, 0, 0);
+        border-bottom: 1px solid @primarycolor;
+        &:hover{
+            .hovertext(@primarycolor);
+        }
+        
+        box-shadow: 2px 10px 10px 3px;
+    }
+    .details{
+        .textstyle(5rem,2rem);
+        font-weight: lighter;
+        font-style: oblique;
+        font-family: @fontfamily;
+        &:hover{
+            .hovertext(@primarycolor);
+        }
+       
+    }
+    .main{
+        color: @basecolor; 
+        .textstyle(1rem,2.5rem);
+        font-family: @fontfamily;
+        &:hover{
+            .hovertext(@primarycolor);
+        }
+    }
+  }
+
+  #foot{
+    .display(column);
+    justify-content: center;
+    align-items: center;
+    background-color: darken(@secondarycolor, 10%) ;
+    width: 60%;
+    max-width: 600px;
+    aspect-ratio: 1/0.3;
+    max-height: 150px;
+    .centered;
+    border-radius: 25px;
+    box-shadow: 0px 10px 30px 0px;
+    &:hover{
+        .hovertext(@primarycolor);
+    }
+    
+
+    a{
+        padding: 1rem;
+        text-decoration: none;
+        color: @primarycolor;
+        font-style: oblique;
+        .textstyle(1rem,1.2rem);
+
+        i{
+            padding-right: 15px;
+        }
+
+        &:hover{
+            .hovertext(@basecolor);
+        }
+    }
+  }
+
+}
+
+
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6

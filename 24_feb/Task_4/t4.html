@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelers</title>
+
+    
+    <link rel="stylesheet" href="/23_feb/Task_4/task4.css">
+</head>
+
+
+<body>
+    
+    <h1>Plan Your Travel Journey with Us...</h1>
+
+    <div class="opts">
+        <div class="locs">
+            <label for="from">Boarding: </label>
+            <select name="from" id="board" onchange="match1(this);" onselect="disablingD(this)"  required>
+                
+            </select>
+        </div>
+    
+        <div class="locs">
+            <label for="to">Drop-off: </label>
+            <select name="to" id="drop" onchange="match2(this);" onselect="disablingS(this)"  required>
+                
+            </select>
+        </div>
+
+        <button onclick="printing()">Set this Route</button>
+
+    </div>
+    <div class="opt1">
+        <p id="out"></p>
+
+        <button type="reset" onclick="clearroute()">Clear Routes...</button>
+    </div>
+    
+
+
+
+    <script src="/23_feb/Task_4/t4.js"></script>
+</body>
+</html>

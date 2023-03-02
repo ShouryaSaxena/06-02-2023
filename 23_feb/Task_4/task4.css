@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -43,4 +44,51 @@ h1{
     color: #fff; 
     background-color: #000;
     padding: 0.2rem;
+=======
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 3rem;
+    color: aliceblue;
+    background-color: blue;
+    padding: 2rem;
+    text-align: center;
+}
+
+.locs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.opts{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+.opt1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+#b1{
+    font-size: 1.1rem; 
+    color: #fff; 
+    background-color: #000;
+    padding: 0.2rem;
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

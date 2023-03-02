@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .b1{
     background-color: rgb(5, 138, 255);
 }
@@ -23,4 +24,31 @@
     width: inherit;
     font-weight: 700;
     text-align: center;
+=======
+.b1{
+    background-color: rgb(5, 138, 255);
+}
+
+.b2{
+    background-color: rgb(255, 25, 0);
+}
+
+.b1,.b2{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 600;
+    max-width: 300px;
+}
+
+.my-custom-row{
+    margin-top: 100px;
+    width: inherit;
+}
+
+.custom-row2{
+    margin-top: 1%;
+    width: inherit;
+    font-weight: 700;
+    text-align: center;
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

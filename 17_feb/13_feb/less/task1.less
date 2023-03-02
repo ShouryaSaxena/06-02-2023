@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @color1: rgb(225, 230, 173);
 @color2: lightblue;
@@ -25,4 +26,33 @@ body{
     #myClass {
         .design(@color2);
       } 
+=======
+
+@color1: rgb(225, 230, 173);
+@color2: lightblue;
+@basecolor: #000;
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.design(@c){
+    background-color: @c;
+    color: @color2;
+    padding: 40px;
+    text-align: center;
+}
+
+body{
+
+    #myId {                                
+        .design(@color1);
+      }
+
+    #myClass {
+        .design(@color2);
+      } 
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $col1: aliceblue;
 $col2: rgb(11, 212, 0);
@@ -29,4 +30,37 @@ body{
     div{
         @include styling;
     }
+=======
+
+$col1: aliceblue;
+$col2: rgb(11, 212, 0);
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin styling{
+    max-width: 75%;
+    margin: 10px auto;
+    padding: 20px 50px;
+    border: 1px solid $col2;
+    text-align: center;
+    background-color: darken($col1,100%);
+    color: $col1;
+}
+
+body{
+    @include styling;
+    h1{
+        @include styling;
+    }
+    p{
+        @include styling;
+    }
+    div{
+        @include styling;
+    }
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @primarycolor: #fff;
 @secondarycolor: #00f;
 @basecolor: #000;
@@ -123,3 +124,130 @@ body{
     
         
 }
+=======
+@primarycolor: #fff;
+@secondarycolor: #00f;
+@basecolor: #000;
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    .nav1{
+
+        color: @primarycolor;
+
+        a{
+            &:hover{
+                color: @secondarycolor;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+
+    .my-custom-col {
+        background-color: lighten(@basecolor,10%);
+        max-width: 43%;
+        height: inherit;
+        aspect-ratio: 1/1.4;
+        color: @basecolor;
+        border: 1px solid @basecolor;
+        margin: 0px;
+        border-radius: 15px;
+
+        .toptag{
+            width: max-content;
+            max-height: 50px;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: rgba(32, 31, 31, 0.888);
+        }
+        .quote{
+            font-size: 0.5rem;
+            text-align: right;
+            font-weight: 400;
+        }
+    }
+    .name{
+        text-align: right;
+        margin-top: -10px;
+    }
+    .name1{
+        text-align: right;
+        background-color: rgb(249, 232, 208);
+        min-height: 20%;
+
+        .kyle{
+            font-size: 2em;
+            font-weight: 700;
+            margin-right: 10%;
+            margin-bottom: 0px;
+        
+        }
+    }
+    .bottom{
+        background-color: rgb(255, 230, 0);
+        width: 100%;
+        margin-bottom: 0px;
+        height: max-content;
+        aspect-ratio: 1/0.9;
+    }
+    .col2{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        margin-top: 10%;
+        line-height: 300%;
+        padding-left: 15%;
+    }
+
+    .my-custom-row {
+        background-color: lighten(@basecolor,10%);
+        width: 100%;
+        aspect-ratio: 1/0.15;
+        color: @basecolor;
+        border: 1px solid @basecolor;
+        margin: 0px;
+        border-radius: 15px;
+    }
+
+    .nav2{
+        background-color: lighten(@basecolor,10%);
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        li{
+            
+            list-style: none;
+            text-align: center;
+            color: @primarycolor;
+        }
+    }
+
+    .btn{
+        padding: 3px 10%;
+        width: fit-content;
+        
+        background-color: rgb(255, 187, 0);
+        color: @primarycolor;
+        font-weight: 600;
+    
+        &:hover{
+            position: relative;
+            top: -5px;
+            box-shadow: 0px 10px 10px 0px;
+        }
+    
+    }
+
+    
+        
+}
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6

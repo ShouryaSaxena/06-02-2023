@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 {
     "allowedExtensions":[".less"],
     "minified":false,
     "sourceMap":false,
     "watchFolder": "less",
     "outputFolder": "css"
+=======
+{
+    "allowedExtensions":[".less"],
+    "minified":false,
+    "sourceMap":false,
+    "watchFolder": "less",
+    "outputFolder": "css"
+>>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
 }
