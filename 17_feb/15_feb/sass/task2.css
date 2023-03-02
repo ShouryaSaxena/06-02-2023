@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body .b1 {
+  background-color: rgb(5, 138, 255);
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  max-width: 300px;
+}
+body .b2 {
+  background-color: rgb(255, 25, 0);
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  max-width: 300px;
+}
+body .custom-row2 {
+  margin-top: 1rem;
+  width: inherit;
+  font-weight: 700;
+  text-align: center;
+}/*# sourceMappingURL=task2.css.map */

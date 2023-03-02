@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <link rel="stylesheet" href="/24_feb/Task_2/task2.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form1">
+            <legend>With preventDefault()</legend>     
+            <div class="input-control">
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text"/>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password">
+            </div>   
+            <div class="btn">
+                <input id="submit" type="submit" name="submit">
+            </div>  
+        </form>
+
+        <form action="" id="form">
+            <legend>Without preventDefault()</legend>
+            <div class="input-control">
+                <label for="username1">Username:</label>
+                <input id="username1" name="username1" type="text"/>
+            </div>
+
+            <div class="input-control">
+                <label for="password1">Password:</label>
+                <input id="password1" name="password1" type="password">
+            </div>   
+            <div class="btn">
+                <input id="submit1" type="submit" name="submit">
+            </div>  
+        </form>
+    </div>
+    
+
+    <div class="container">
+        <div id="box">
+            <button id="b1">Without stopPropagation()..</button>
+        </div>
+        <div id="box2">
+            <button id="b2">With stopPropagation()..</button>
+        </div>
+    </div>
+
+    <script>
+
+//----------------Using preventDefault() in submit button---------------------
+
+        let form = document.getElementById('form1');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();     //preventDefault() prevents the element from working as it's default actions. 
+        })
+
+        let box1 = document.getElementById('box');
+        box1.addEventListener('click', function(){
+            this.style.backgroundColor = 'red';
+        })
+
+        let box2 = document.getElementById('box2');
+        box2.addEventListener('click', function(){
+            this.style.backgroundColor = 'red';
+        })
+    
+//----------------------Without Using stopPropagation()---------------------
+
+        let b1 = document.getElementById('b1');
+        b1.addEventListener('click', function(){
+            document.getElementById('b1').style.color = 'white';
+            document.getElementById('b1').style.backgroundColor = 'black';
+        })
+
+//---------------------Using stopPropagation() in button---------------------
+
+        let b2 = document.getElementById('b2');
+        b2.addEventListener('click', function(e) {
+            e.stopPropagation();                    // stopPropagation() stops the element from performing actions which are not assigned to it. No action is passed to it from any superclass.            
+            document.getElementById('b2').style.color = 'white';
+            document.getElementById('b2').style.backgroundColor = 'black';
+        })
+
+    </script>
+</body>
+</html>

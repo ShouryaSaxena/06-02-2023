@@ -1,0 +1,48 @@
+
+.thegrid
+    {
+        display:  grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 0px;
+        border-collapse: collapse;
+        border: 1px solid black;
+    
+    }
+/*For Small Screens*/
+@media screen and (max-width:768px) {
+    .thegrid { grid-template-columns: auto auto auto auto;}
+}
+
+
+
+    .divCell
+    {
+        border: 1px solid black;
+        padding-left: px;
+        padding: 10px 3px;
+        
+    }
+
+    .headsub{
+        background-color: rgba(227, 227, 235, 0.913);
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 10px 3px;
+        padding-left: 3px;
+    }
+
+    .headCell
+    {
+        border: 1px solid black;
+        background-color: rgba(222, 222, 233, 0.898);
+        padding-left: 3px;
+        padding: 10px 3px;
+        
+    }
+
+    
+
+
+
+
+

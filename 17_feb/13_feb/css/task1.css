@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body #myId {
+  background-color: #e1e6ad;
+  color: lightblue;
+  padding: 40px;
+  text-align: center;
+}
+body #myClass {
+  background-color: lightblue;
+  color: lightblue;
+  padding: 40px;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.btns {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  max-width: 300px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body .b1 {
+  background-color: #058aff;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  max-width: 300px;
+}
+body .b2 {
+  background-color: #ff1900;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  max-width: 300px;
+}
+body .custom-row2 {
+  margin-top: 1rem;
+  width: inherit;
+  font-weight: 700;
+  text-align: center;
+}

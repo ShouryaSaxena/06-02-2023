@@ -1,0 +1,41 @@
+@background: #21B2AA;
+@primarycolor: #fff;
+@basecolor: #000;
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #menu {
+    ul {
+        list-style: none;
+        .flex;
+        background-color: @background;
+        margin: auto;
+        padding: auto;
+        @media screen and(max-width:800px) {
+            display: block;
+        }
+        li {
+            padding: 8px 45px;
+            a {
+                text-decoration: none;
+                color: @primarycolor;
+                font-size: 2rem;
+            }
+            &:hover {
+                background-color: lighten(@background, 35%);
+                font-size: 35px;
+                border-radius: 50px;
+                a {
+                    text-decoration: none;
+                    color:@basecolor;
+                    font-size: 2rem;
+                }
+            }
+        }
+      }
+    }

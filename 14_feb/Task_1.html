@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes in HTML</title>
+    <link rel="stylesheet" href="/14_feb/css/task1.css">
+</head>
+
+<body>
+
+<!-------------------------------------------Header----------------------------------------->    
+    <header class="head">
+        <h1>Welcome To MinTapz</h1>
+    </header>
+
+<!----------------------------------------Form Body----------------------------------------->
+
+    <form>
+        <fieldset>                                           
+         <legend><b> Personal Details: </b></legend>         
+         <label for="fname">First name:</label>
+
+         <input type="text" id="fname" name="fname" required><br><br>
+         <label for="lname">Last name:</label>                       
+
+         <input type="text" id="lname" name="lname" required><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required><br><br>
+         <label for="birthday">D.O.B:</label>
+         <input type="date" id="birthday" name="birthday" pattern="date" required><br><br>
+         <label for="food">Register as a :</label>
+
+        <select name="food" id="food">
+           <option value="Pizza">Student</option>
+           <option value="Burger">Employee</option>
+           <option value="Sandwich">Organization</option>
+        </select>
+        <br><br>
+           <input type="submit" value="Submit" class="submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>

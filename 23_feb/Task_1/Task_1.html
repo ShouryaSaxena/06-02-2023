@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElements in JS</title>
+</head>
+
+<style>
+
+    h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .locs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .opts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 2rem;
+    }
+</style>
+
+<body>
+
+    <h1 id="head">Get Started...</h1>
+    
+    <div class="locs">
+        <label for="name">Enter Your Name: </label>
+        <input type="text" name="name" class="details" required>
+    </div>
+
+    <div class="locs">
+        <label for="age">Enter Your Name: </label>
+        <input type="number" name="age" class="details" required>
+    </div>
+
+    <div class="locs">
+        <label for="monile">Enter Your Mobile Number: </label>
+        <input type="tel" name="mobile" class="details" maxlength="10" required>
+    </div>
+
+    <div class="opts">
+        <button onclick="Go()">Submit</button>
+    </div>
+
+    <div class="opts">
+        <p id="txt1"></p>
+        <p id="txt2"></p>
+        <p id="txt3"></p>
+    </div>
+
+    <script>
+
+        Go = () => {
+            const A = document.getElementsByClassName('details');              // A has all the elements sharing same ClassName- details...
+
+            document.getElementById('txt1').innerHTML = "Name: " + A[0].value;
+            document.getElementById('txt2').innerHTML = `Age: ${A[1].value}`;      // element with id txt2 accessed....
+            document.getElementById('txt3').innerHTML = `Contact: ${A[2].value}`;
+            
+            const B = document.getElementsByTagName('p');                      // B has all the elements having similar TagName- p...
+            document.getElementById('head').style.color = "red";
+            document.getElementById('head').innerHTML = "Hello " + A[0].value + ", Greetings!";
+        
+        }
+        
+    </script>
+
+    
+</body>
+</html>
