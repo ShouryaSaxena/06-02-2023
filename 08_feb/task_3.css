@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .rect1{
     box-sizing: border-box;
 
@@ -50,56 +50,3 @@ left: calc(50% + 50%/2);
 top: calc(50% - 90%/2);
 }
 
-=======
-.rect1{
-    box-sizing: border-box;
-
-position: absolute;
-width: 10%;
-height: 30%;
-left: calc(50% - 42%/2);
-top: calc(50% - 78%/2);
-}
-
-.rect2{
-    box-sizing: border-box;
-
-position: absolute;
-width: 22%;
-height: 10%;
-left: calc(50% - 72%/2);
-top: calc(50% - 8%/2);
-
-}
-
-.rect3{
-    box-sizing: border-box;
-
-position: absolute;
-width: 10%;
-height: 23%;
-left: calc(50% - 13%/2);
-top: calc(50% - 79%/2);
-}
-
-.rect4{
-    box-sizing: border-box;
-
-position: absolute;
-width: 18%;
-height: 29%;
-left: calc(50% + 10%/2);
-top: calc(50% - 90%/2);
-}
-
-.rect5{
-    box-sizing: border-box;
-
-position: absolute;
-width: 22.5%;
-height: 45%;
-left: calc(50% + 50%/2);
-top: calc(50% - 90%/2);
-}
-
->>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
