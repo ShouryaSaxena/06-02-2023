@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <script defer src="/03_mar/restaurant.js"></script>
+    <link rel="stylesheet" href="/03_mar/restaurant.css">
+</head>
+
+<body>
+
+    <!---------------------------------------- Navbar ------------------------------------------------>
+
+    <nav id="navbar">
+        <ul>
+            <li><a class="point" href="#">Menu</a></li>
+            <li><a href="#">Book a Table</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!---------------------------------------Booking a table--------------------------------------  -->
+
+    <div class="container">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Country Delight :)</h1>
+        <p class="text">We're greateful to have offer Best Ambience, Feel, The Best Taste to make you & your Tummy HAPPY
+            :)</p>
+
+        <p class="text"><strong>Reserve</strong> a table, ask for today's special or just send us a message:
+        </p>
+        <form action="" target="_blank" id="details">
+            <div class="visitor">
+                <label for="Name">Your Name:</label>
+                <input type="text" placeholder="Name" required name="Name" id="name">
+            </div>
+            <div class="visitor">
+                <label for="date">Date & Time:</label>
+                <input type="datetime-local" placeholder="Date and time" required name="date" value=""
+                    id="slot" onchange="match(this);">
+            </div>
+            <div class="visitor">
+                <label for="table">Select your Table:</label>
+                <select name="table" id="table" onchange="disablingFirst()" required>
+                </select>
+            </div>
+
+            <div class="visitor">
+                <input type="button"
+                    style=" width: fit-content; height: fit-content; background-color: black; color: aliceblue; font-size: 1.5rem; padding: 0.5rem; border-radius: 3rem;"
+                    onclick="check()" value="Book this Slot!!">
+                    <!-- <input type="button" 
+                    style=" width: fit-content; height: fit-content; background-color: black; color: aliceblue; font-size: 1.5rem; padding: 0.5rem; border-radius: 3rem;"
+                    onclick="showbookings()" value="Show Bookings...">-->
+            </div>
+
+            <div class="visitor">
+                <p id="output"></p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
