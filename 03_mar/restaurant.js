@@ -3,18 +3,18 @@
 let tables = ["", "Table-1", "Table-2", "Table-3", "Table-4", "Table-5", "Table-6", "Table-7", "Table-8", "Table-9", "Table-10"];
 
 let users = [];
-let t = document.getElementById('table');
+let table = document.getElementById('table');
 
 
 for (let i = 0; i < tables.length; i++) {
     let opt = document.createElement('option');
     opt.textContent = tables[i];
     opt.value = tables[i];
-    t.appendChild(opt);
+    table.appendChild(opt);
 }
 
 disablingFirst = () => {
-    t.options[0].disabled = true;
+    table.options[0].disabled = true;
 }
 
 users = JSON.parse(localStorage.getItem('userkey'));
@@ -30,9 +30,9 @@ match = (select) => {
 
     for (let i = 0; i < tables.length; i++) {
         if (i == 0) {
-            t.options[i].disabled = true;
+            table.options[i].disabled = true;
         }
-        t.options[i].disabled = false;
+        table.options[i].disabled = false;
     }
 
     if (users != null) {
@@ -40,8 +40,8 @@ match = (select) => {
             if (selectedOption === users[i].userSlot) {
                 console.log(`Slot already booked for ${users[i].userTable}`);
                 for (let j = 0; j < tables.length; j++) {
-                    if (t.options[j].value === users[i].userTable) {
-                        t.options[j].disabled = true;
+                    if (table.options[j].value === users[i].userTable) {
+                        table.options[j].disabled = true;
                     }
                 }
 
@@ -53,7 +53,7 @@ match = (select) => {
 
 
 disablingFirst = () => {
-    t.options[0].disabled = true;
+    table.options[0].disabled = true;
 }
 
 
