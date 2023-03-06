@@ -55,6 +55,7 @@
       {
         "document-title": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }

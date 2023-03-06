@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 h1{
     text-align: center;
     padding-top: 50px;
@@ -48,54 +48,3 @@ h1{
     color: aliceblue;
 }
 
-=======
-h1{
-    text-align: center;
-    padding-top: 50px;
-    color: #fff;
-}
-
-.form-control {
-    text-align: left;
-    margin-bottom: 25px;
-}
-
-/* Styling form-control Label */
-
-.form-control label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.form-control input,
-.form-control select,
-.form-control option,
-.form-control textarea {
-     border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-}
-
-#button {
-    background-color: #0fb769;
-    border: 1px solid #000000;
-    border-radius: 2px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-#display_message{
-    color: aliceblue;
-}
-
-#display_details{
-    color: aliceblue;
-}
-
->>>>>>> cbfd0a1b0c0c555bd3620b6cb346c3cc453373e6
